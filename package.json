@@ -1,0 +1,14 @@
+
+{
+  "name": "typescript-complete-guide",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeScript learning notes, examples, exercises, and projects",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
