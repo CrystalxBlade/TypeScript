@@ -1,14 +1,24 @@
-
 {
-  "name": "typescript-complete-guide",
+  "name": "typescript",
   "version": "1.0.0",
-  "private": true,
-  "description": "TypeScript learning notes, examples, exercises, and projects",
+  "description": "A beginner-friendly guide to learning TypeScript, from fundamentals to advanced concepts and projects.",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc",
-    "check": "tsc --noEmit"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrystalxBlade/TypeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CrystalxBlade/TypeScript/issues"
+  },
+  "homepage": "https://github.com/CrystalxBlade/TypeScript#readme",
   "devDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^7.0.2"
   }
 }
