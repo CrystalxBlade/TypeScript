@@ -1,10 +1,24 @@
 
 
-function playerName(kind: string | number)
+function coffee(size: 'small' | 'medium' | 'large' | number)
 {
-    if(typeof kind === 'string')
+    if(size === 'small')
     {
-        return `Creating ${kind} type of player...`
+        return 'small coffee for small people'
     }
-    return `Creating ${kind} userID of player...`
+    if(size === 'medium')
+    {
+        return 'medium coffee for average people'
+    }
+    if(size === 'large')
+    {
+        return 'large for tallest people'
+    }
+    if(typeof size === "number")
+    {
+        return `this will be the size ${size}` 
+    }
 }
+
+const val = coffee(8)
+console.log(val)
