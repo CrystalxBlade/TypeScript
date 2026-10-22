@@ -1,24 +1,29 @@
 
 
-function coffee(size: 'small' | 'medium' | 'large' | number)
+type coffee = 
 {
-    if(size === 'small')
-    {
-        return 'small coffee for small people'
-    }
-    if(size === 'medium')
-    {
-        return 'medium coffee for average people'
-    }
-    if(size === 'large')
-    {
-        return 'large for tallest people'
-    }
-    if(typeof size === "number")
-    {
-        return `this will be the size ${size}` 
-    }
+    type : string
+    sugar : number
 }
 
-const val = coffee(8)
-console.log(val)
+function isCoffee(obj: any):obj is coffee
+{
+    return (
+        typeof obj === "object" &&
+        obj !== null && 
+        typeof obj.type === "string" &&
+        typeof obj.sugar === "number"
+    )
+}
+
+function serverOrder(item:coffee | string)
+{
+    if(isCoffee(item))
+    {
+        return `Serving ${item.type} coffee with ${item.sugar}`
+    } 
+    return `Serving custom ${item}`
+}
+
+let order = isCoffee({type: "latte", sugar : 8})
+console.log(order)
