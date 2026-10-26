@@ -15,6 +15,8 @@ console.log(allUsers)
 
 ------------------------------------------------------
 
+*/
+
 const superHeroes:string[] = []
 
 const power: Array<number> = []
@@ -30,5 +32,5 @@ power.push(6)
 console.log(superHeroes)
 
 console.log(power)
-*/
+
 
