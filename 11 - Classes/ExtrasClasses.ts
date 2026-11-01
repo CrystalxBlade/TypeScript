@@ -11,7 +11,6 @@ class User
 
     constructor(email: string, user: string)
     {
-        
         this.email = email
         this.name = user
     }
@@ -24,11 +23,13 @@ blade.map
 
 */
 
-
+ 
 class User
 {
     readonly city: string = "City of Tears"
     constructor(public email: string, public name: string){}
+
+    get getAppleEmail(): 
 }
 
 const blade = new User("blade@mail.com", "blade")
