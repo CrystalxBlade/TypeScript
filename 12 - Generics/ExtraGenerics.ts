@@ -1,3 +1,5 @@
+/*
+
 const score: Array<number> = []
 const names: Array<string> = []
 
@@ -27,3 +29,32 @@ function identityFour<T>(val: T): T                        // short hand to type
 {
     return val
 }
+
+*/
+
+interface Bottle
+{
+    brand: string,
+    type: number
+}
+
+
+function getSearchProducts<T>(products: T[]): T           // using normal function
+{
+    const myIndex = 4
+    return products[myIndex]
+}
+
+
+const getMoreSearchProducts = <T>(products: T[]): T =>   // using arrow function  
+    {
+        const myIndex = 5
+        return products[myIndex]
+    }
+
+
+const getProducts = <T,>(products: T[]): T =>   // here you can see theres a comma <T,> this is to mention that   
+    {                                           // it's not a HTML tag it is a generic
+        const myIndex = 5
+        return products[myIndex]
+    }
