@@ -58,3 +58,43 @@ const getProducts = <T,>(products: T[]): T =>   // here you can see theres a com
         const myIndex = 5
         return products[myIndex]
     }
+
+interface Database
+{
+    connection: string,
+    username: string,
+    password: string
+}
+
+
+function anotherFunction <T, U extends Database>(valOne: T, valTwo: U)
+{
+    return {valOne, valTwo}
+}
+
+
+interface Quiz
+{
+    name: string,
+    type: string
+}
+
+interface Course
+{
+    name: string,
+    author: string,
+    subject: string
+}
+
+class sellable<T>
+{
+    public cart: T[] = []
+
+    addToCart(product: T)
+    {
+        this.cart.push(product)
+    }
+} 
+
+
+
