@@ -19,3 +19,15 @@ function detectType(val: number | string)
     return val + 4
 }
 
+const result = detectType("BLADE")
+console.log(result)
+
+function provide(id: string | null)
+{
+    if(!id)
+    {
+        console.log("Please provide ID")
+        return
+    }
+    return id.toLowerCase()
+}
