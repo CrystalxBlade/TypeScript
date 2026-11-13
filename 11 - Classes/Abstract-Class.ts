@@ -1,4 +1,4 @@
-
+export {};
 
 abstract class Character {
   constructor(public name: string, public health: number) {}

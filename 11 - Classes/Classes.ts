@@ -1,3 +1,5 @@
+export {};
+
 // Creating a Class
 
 class Player {
